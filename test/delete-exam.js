@@ -2,7 +2,7 @@
 process.env.NODE_ENV = 'test';
 
 let mongoose = require("mongoose");
-let Exam = require('../app/models/exam');
+let { Exam } = require('../app/models/exam');
 
 
 

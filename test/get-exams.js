@@ -1,4 +1,4 @@
-let Exam = require('../app/models/Exam');
+let Exam = require('../app/models/exam');
 let server = require('../server');
 let chai = require('chai');
 let chaiHttp = require('chai-http');
