@@ -5,6 +5,13 @@ let chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 let should = chai.should();
 
+
+describe('Exams', () => {
+	beforeEach((done) => { //Before each test we empty the database
+		Exam.remove({}, (err) => {
+		   done();
+		});
+
 describe('GET /exams/', () => {
   it('should get all exams', (done) => {
     chai.request(server)
@@ -18,3 +25,8 @@ describe('GET /exams/', () => {
     }); 
   });
 });
+
+	});
+});
+
+

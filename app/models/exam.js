@@ -4,6 +4,7 @@ let URL = require('mongoose-type-url');
 
 //book schema definition
 let ExamSchema = new Schema({
+    
 });
 
 //Exports the examSchema for use elsewhere.

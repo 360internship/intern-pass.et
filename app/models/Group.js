@@ -4,7 +4,7 @@ let { Exam, ExamSchema } = require('./exam');
 
 let GroupSchema = new Schema({
      name: { type: String, required: true },
-    id: {type: Number, required: true}
+     id: {type: Number, required: true}
 
     
 },
@@ -18,9 +18,7 @@ GroupSchema.pre('save', next => {
   if(!this.createdAt) {
     this.createdAt = now;
   }
-//   if(id == null){
-//       GroupSchema = null;
-//   }
+
   next();
 });
 
