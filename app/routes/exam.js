@@ -1,5 +1,5 @@
 let mongoose = require('mongoose');
-let { Exam } = require('../models/Exam');
+let { Exam } = require('../models/exam');
 
 /*
  * GET /Exam route to retrieve all the Exams.

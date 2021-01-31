@@ -15,7 +15,8 @@
   "homepage": "https://github.com/abrahamgit/intern-pass.et#readme",
   "dependencies": {
     "express": "^4.15.2",
-    "mongoose": "^4.9.5"
+    "mongoose": "^4.9.5",
+    "mongoose-type-url": "^1.0.2"
   },
   "scripts": {
     "start": "SET NODE_ENV=dev && node server.js",

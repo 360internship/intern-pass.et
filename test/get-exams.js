@@ -1,9 +1,16 @@
-let Exam = require('../app/models/Exam');
+let Exam = require('../app/models/exam');
 let server = require('../server');
 let chai = require('chai');
 let chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 let should = chai.should();
+
+
+describe('Exams', () => {
+	beforeEach((done) => { //Before each test we empty the database
+		Exam.remove({}, (err) => {
+		   done();
+		});
 
 describe('GET /exams/', () => {
   it('should get all exams', (done) => {
@@ -18,3 +25,8 @@ describe('GET /exams/', () => {
     }); 
   });
 });
+
+	});
+});
+
+
